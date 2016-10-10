@@ -70,8 +70,6 @@ function getPigLatin() {
 
 } //end of function getPigLatin()
 
-function latinFunc() {
-    eventBtn = document.getElementById('event-btn');
-    eventBtn.addEventListener("click", getPigLatin);
-}
-document.addEventListener('DOMContentLoaded', latinFunc);
+document.addEventListener('DOMContentLoaded', function(){
+    document.getElementById('event-btn').addEventListener("click", getPigLatin);
+});
